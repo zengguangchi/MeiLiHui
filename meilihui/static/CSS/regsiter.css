@@ -1,0 +1,276 @@
+
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+/**{*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+div.login_wrapper{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #dddddb;
+    background-image: url(../images/photo_03.png);
+    background-repeat: repeat-x;
+}
+div.login_wrapper div.login_container{
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background:url("../images/login_main.jpg") no-repeat;
+}
+.login_header {
+    background-image: url(../images/logo.png);
+    width: 369px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.login_content {
+    width: 950px;
+    height: 650px;
+    overflow: hidden;
+}
+.login_content .login_main {
+    float: right;
+    width: 380px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.hydl_regsiter {
+    margin-left: 90px;
+    width: 260px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.hydl_regsiter span a{
+    text-decoration: underline;
+    color: red;
+}
+.hydl_regsiter h2 {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+.hydl_regsiter span{
+    float: right;
+    margin-top: 2px;
+}
+.newPeople {
+    width: 260px;
+    padding-left: 90px;
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.hydl_loginbar {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.hydl_loginbar ul li {
+    font-weight: bold;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    width: 350px;
+    text-align: left;
+}
+.hydl_loginbar input{
+    width: 230px;
+    line-height: 40px;
+    height: 30px;
+    margin-left: 20px;
+}
+.hydl_loginbar span{
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    text-align: right;
+}
+.hydl_loginbar p{
+    width: 220px;
+    height: 25px;
+    /*background: blue;*/
+    float: right;
+    margin-right: 50px;
+    color: red;
+}
+.hydl_btn {
+    width: 250px;
+    height: 35px;
+    overflow: hidden;
+    margin-left: 90px;
+    cursor: pointer;
+}
+.hydl_btn a {
+    display: block;
+    background-color: #db2725;
+    width: 260px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #FFF;
+    font-size: 14px;
+}
+.sjzc_login {
+    width: 260px;
+    padding-left: 90px;
+    height: auto;
+    overflow: visible;
+}
+.sjzc_login p {
+    float: left;
+    margin: 8px 0 0 0;
+    display: inline;
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+    width: 260px;
+}
+.xian {
+    background-color: #a8aaab;
+    width: 350px;
+    height: 1px;
+    margin-left: 0;
+    overflow: hidden;
+    margin-top: 19px;
+}
+.erweima {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.erweima p {
+    line-height: 20px;
+    margin-top: 16px;
+    float: right;
+    margin-right: 35px;
+}
+
+/*网页底部*/
+.footer_container {
+    width: 100%;
+    height: 235px;
+    position: relative;
+    margin: 0 auto;
+    /*background-color: #f2f2f2;*/
+    z-index: 6;
+}
+.footer {
+    width: 1000px;
+    height: 205px;
+    margin: 0 auto;
+    padding-top: 30px;
+    /*background-color: #f2f2f2;*/
+    text-align: center;
+}
+.footer_advantage {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.footer_advantage ul li {
+    display: block;
+    width: 165px;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    border-right: 1px solid #777;
+}
+.footer_advantage ul .footer_advantage_right {
+    border: 0;
+}
+.footer_advantage ul li span{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+}
+.footer_advantage ul li span.s1{
+    background: url("../images/base_z.png") no-repeat -205px -146px;
+}
+.footer_advantage ul li span.s1:hover{
+    background: url("../images/base_z.png") no-repeat -205px -264px;
+}
+.footer_advantage ul li span.s2{
+    background: url("../images/base_z.png") no-repeat -598px -102px;
+}
+.footer_advantage ul li span.s2:hover{
+    background: url("../images/base_z.png") no-repeat -598px 9px;
+}
+.footer_advantage ul li span.s3{
+    background: url("../images/base_z.png") no-repeat -206px -380px;
+}
+.footer_advantage ul li span.s3:hover{
+    background: url("../images/base_z.png") no-repeat -357px -227px;
+}
+.footer_advantage ul li span.s4{
+    background: url("../images/base_z.png") no-repeat -470px 10px;
+}
+.footer_advantage ul li span.s4:hover{
+    background: url("../images/base_z.png") no-repeat -470px -102px;
+}
+.footer_advantage ul li span.s5{
+    background: url("../images/base_z.png") no-repeat -355px -341px;
+}
+.footer_advantage ul li span.s5:hover{
+    background: url("../images/base_z.png") no-repeat -355px -454px;
+}
+.footer_advantage ul li span.s6{
+    background: url("../images/base_z.png") no-repeat -357px -110px;
+}
+.footer_advantage ul li span.s6:hover{
+    background: url("../images/base_z.png") no-repeat -357px 7px;
+}
+.footer_link{
+    display: block;
+    text-align: center;
+    height: 17px;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+.footer_link a{
+    padding: 0 10px;
+}
+.footer_copyright{
+    text-align: center;
+    margin-bottom: 15px;
+    line-height:17px;
+}
+.footer_copyright span{
+    margin-right: 30px;
+}
+.footer_license span{
+    margin-right: 30px;
+}

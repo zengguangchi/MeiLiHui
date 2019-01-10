@@ -1,0 +1,30 @@
+Started
+With command: 2
+Using folder for deployment: C:\Users\Administrator\AppData\Roaming\FireShot
+Created directory with result: 1
+Copying myself...
+Extracting manifest...
+Written 369 bytes
+Done
+Writing registry...
+Successfully registered to HKEY_LOCAL_MACHINE
+Successfully registered to HKEY_CURRENT_USER
+Started
+With command: 2
+Using folder for deployment: C:\Users\Administrator\AppData\Roaming\FireShot
+Created directory with result: 0
+Copying myself...
+
+**** Error: Failed to copy new executable to the deployment folder.
+
+Failed to deploy with default permissions, trying to execute as admin.
+Execution code is: 42
+Started
+With command: 3
+Using folder for deployment: C:\Users\Administrator\AppData\Roaming\FireShot
+Created directory with result: 0
+Copying myself...
+
+**** Error: Failed to copy new executable to the deployment folder.
+
+Exit

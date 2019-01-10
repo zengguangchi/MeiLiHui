@@ -1,0 +1,402 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+
+
+/**{*/
+/*margin: 0 auto;*/
+/*}*/
+
+
+/*导航栏头部样式*/
+div.header_container{
+    width:100%;
+    height: 162px;
+    position: relative;
+}
+div.header_container div.header{
+    width: 100%;
+    height: 30px;
+    /*position: relative;*/
+    background: #f2f2f2;
+}
+div.header_container div.header div.quick_access{
+    width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+div.quick_access div.quick_access_left{
+    float: left;
+    height: 30px;
+    width: auto;
+    line-height: 30px;
+}
+ul#ul_header li.theLi{
+    list-style: none;
+    float: left;
+    height: 30px;
+    padding: 0 15px 0 0;
+}
+.header .quick_access_left ul .theLi .youli {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 -4px 0;
+}
+.header .quick_access_right{
+    position: relative;
+}
+.header .quick_access_right div.app{
+    width: 118px;
+    height: 130px;
+    position: absolute;
+    top: 30px;
+    left: 770px;
+    z-index: 101;
+    background:white;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: none;
+}
+.header .quick_access_right div.app img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+.header .quick_access_right div.app p{
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 105px;
+    left: 20px;
+}
+.header .quick_access_right ul{
+    list-style: none;
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    padding: 0 80px 0 0;
+}
+.header .quick_access_right ul li{
+    float: left;
+    padding: 0 0 0 20px;
+}
+div.header_container div.branding{
+    width: 1000px;
+    height: 90px;
+    /*background: red;*/
+    margin: 0 auto;
+}
+div.header_container div.branding div.logo{
+    width: 205px;
+    height: 90px;
+    float: left;
+}
+div.header_container div.branding div.logo_slogan{
+    width: 170px;
+    height: 90px;
+    float: left;
+}
+div.header_container div.nav_container{
+    width:100%;
+    height: 42px;
+    position: absolute;
+    background: #000;
+    z-index: 100;
+}
+div.header_container div.nav_container div.nav{
+    width: 1000px;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+}
+div.header_container div.nav_container div.nav ul.nav1{
+    list-style: none;
+    font-size: 15px;
+    height: 42px;
+    line-height: 42px;
+
+}
+div.header_container div.nav_container div.nav .nav1 li a{
+    float: left;
+    margin: 0 15px;
+    color: white;
+}
+div.nav div.shopping_bag{
+    height: 42px;
+    float: right;
+    cursor: pointer;
+    padding: 0 15px 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+div.nav div.shopping_bag li{
+    float: left;
+    margin-left: 15px;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+}
+.pop_up_shopping{
+    width: 285px;
+    height:auto;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    z-index: 9;
+}
+.button_close {
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/icon_close2.png) no-repeat;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+.inner_none {
+    margin-top: 35px;
+    width: 245px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+div.pop_up1{
+    height: 300px;
+    width: 582px;
+    position:absolute;
+    top: 42px;
+    left:60px;
+    border: 1px solid #e7e7e7;
+    display: none;
+}
+div.submenu{
+    width: 290px;
+    height: 300px;
+    float: left;
+    position: relative;
+    z-index: 100;
+    background:white;
+}
+div.submenu p.title{
+    color: black;
+    width: 260px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: left;
+    margin-left: 10px;
+}
+div.submenu ul{
+    font-size: 12px;
+}
+div.submenu ul li{
+    float: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 15px;
+    white-space: normal;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 0;
+}
+div.submenu p.more{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    font-weight: bold;
+    left: 138px;
+    bottom: -7px;
+    text-align: right;
+}
+
+div.pop_up2{
+    height: 300px;
+    width: 582px;
+    position:absolute;
+    top: 42px;
+    left:120px;
+    border: 1px solid #e7e7e7;
+    display: none;
+}
+div.pop_up3{
+    height: 300px;
+    width: 582px;
+    position:absolute;
+    top: 42px;
+    left:180px;
+    border: 1px solid #e7e7e7;
+    display: none;
+}
+div.pop_up4{
+    height: 300px;
+    width: 582px;
+    position:absolute;
+    top: 42px;
+    left:240px;
+    border: 1px solid #e7e7e7;
+    display: none;
+}
+div.pop_up5{
+    height: 300px;
+    width: 582px;
+    position:absolute;
+    top: 42px;
+    left:300px;
+    border: 1px solid #e7e7e7;
+    display: none;
+}
+div.pop_up6{
+    height: 300px;
+    width: 290px;
+    position:absolute;
+    top: 42px;
+    left:360px;
+    border: 1px solid #e7e7e7;
+    display: none;
+}
+
+
+
+
+
+/*底部样式*/
+.footer_container {
+    width: 100%;
+    height: 235px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    z-index: 6;
+}
+.footer {
+    width: 1000px;
+    height: 205px;
+    margin: 0 auto;
+    padding-top: 30px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.footer_advantage {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.footer_advantage ul li {
+    display: block;
+    width: 165px;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    border-right: 1px solid #777;
+}
+.footer_advantage ul .footer_advantage_right {
+    border: 0;
+}
+.footer_advantage ul li span{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+}
+.footer_advantage ul li span.s1{
+    background: url("../images/base_z.png") no-repeat -205px -146px;
+}
+.footer_advantage ul li span.s1:hover{
+    background: url("../images/base_z.png") no-repeat -205px -264px;
+}
+.footer_advantage ul li span.s2{
+    background: url("../images/base_z.png") no-repeat -598px -102px;
+}
+.footer_advantage ul li span.s2:hover{
+    background: url("../images/base_z.png") no-repeat -598px 9px;
+}
+.footer_advantage ul li span.s3{
+    background: url("../images/base_z.png") no-repeat -206px -380px;
+}
+.footer_advantage ul li span.s3:hover{
+    background: url("../images/base_z.png") no-repeat -357px -227px;
+}
+.footer_advantage ul li span.s4{
+    background: url("../images/base_z.png") no-repeat -470px 10px;
+}
+.footer_advantage ul li span.s4:hover{
+    background: url("../images/base_z.png") no-repeat -470px -102px;
+}
+.footer_advantage ul li span.s5{
+    background: url("../images/base_z.png") no-repeat -355px -341px;
+}
+.footer_advantage ul li span.s5:hover{
+    background: url("../images/base_z.png") no-repeat -355px -454px;
+}
+.footer_advantage ul li span.s6{
+    background: url("../images/base_z.png") no-repeat -357px -110px;
+}
+.footer_advantage ul li span.s6:hover{
+    background: url("../images/base_z.png") no-repeat -357px 7px;
+}
+
+.footer_link{
+    display: block;
+    text-align: center;
+    height: 17px;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+.footer_link a{
+    padding: 0 10px;
+}
+.footer_copyright{
+    text-align: center;
+    margin-bottom: 15px;
+    line-height:17px;
+}
+.footer_copyright span{
+    margin-right: 30px;
+}
+.footer_license span{
+    margin-right: 30px;
+}
+
+
+
+
+
+

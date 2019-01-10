@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <script type="text/javascript" src= {% static "JS/jquery-1.12.3.js" %} ></script>
+    <script type="text/javascript" src={% static "JS/jquery.cookie.js" %}></script>
+    <script type="text/javascript" src={% static "JS/login.js" %}></script>
+    <link rel="stylesheet" type="text/css"  href={% static "CSS/login.css" %} >
+</head>
+<body>
+<div class="login_wrapper">
+    <div class="login_container">
+        <div class="login_header" onclick="javascript:window.location.href = '{% url 'mlh:index' %}'">
+
+        </div>
+        <div class="login_content">
+            <div class="login_main">
+                <div class="hydl_regsiter">
+                    <h2>会员登录</h2>
+                    <span>没有账号？<a href={% url 'mlh:regsiter' %}>免费注册</a></span>
+                </div>
+                <div class="hydl_loginbar">
+                    <form action="" method="post" id="loginForm">
+                        <ul>
+                            <li>
+                                <span>账户名:</span><input type="text" value="" placeholder="请输入手机或邮箱" id="username" name="username">
+                            </li>
+                            <p id = "Act_error" ></p>
+                            <li>
+                                <span>密码:</span><input id="passWordtext" type="password" placeholder="请输入6-20个字符" maxlength="20" name="password">
+                            </li>
+                            <li id="word_length" style="margin-left: 130px">
+                                <span id="low" style="height: 30px;width: 60px;background:darkgray; text-align: center;line-height: 30px">低</span>
+                                <span id = "middle" style="height:30px;width: 60px;background:darkgray; text-align: center;line-height: 30px">中</span>
+                                <span id = "height" style="height: 30px;width: 60px;background:darkgray; text-align: center;line-height: 30px">高</span>
+                            </li>
+                            <p id = "Pwd_error"></p>
+{#                            <li id="rdm_img" class="showstyle">#}
+{#                                <span>验证码:</span>#}
+{#                                <input class="yanzheng" name="random" id="randomImg" maxlength="6" type="text" style="width: 100px;">#}
+{#                                <img id="rdm" src= {% static "images/getRandom.jpg" %} style=" border: 1px solid #999;cursor: pointer;">#}
+{#                                <span id="randomNum" style="float: right;width: 120px;height:35px;margin: 0 10px;background:#9ac9d8;text-align: center">点击生成验证码</span>#}
+{#                            </li>#}
+{#                            <p class = "Rdm_error" id="Rdm_error"></p>#}
+{#                        </ul>#}
+                    </form>
+                </div>
+                <div style="clear:both;"></div>
+
+                <div class="hydl_btn">
+                    <a id="submitBtn">会员登录</a>
+                </div>
+
+                <div class="hydl_login">
+                    <p><input type="checkbox" id="checkbox">下次自动登录</p>
+                    <a href=""><span>忘记密码</span></a>
+                </div>
+                <div class="hydl_partner">
+                    <h4>联名登录:</h4>
+                    <a href="#" class="weibo"></a>
+                    <a href="#" class="zhifubao"></a>
+                </div>
+
+                <div style="clear:both;"></div>
+                <div class="xian"></div>
+                <div class="erweima">
+                    <div class="erweima">
+                        <img src={% static "images/app.jpg" %} />
+                        <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--网页底部-->
+    <div class="footer_container">
+        <div class="footer">
+            <div class="footer_advantage">
+                <ul>
+                    <li><a class="a1" href=""><span class="s1"></span><p>100%品牌授权正品</p></a></li>
+                    <li><a class="a2" href=""><span class="s2"></span><p>满688免运费</p></a></li>
+                    <li><a class="a3" href=""><span class="s3"></span><p>7天无条件退货</p></a></li>
+                    <li><a class="a4" href=""><span class="s4"></span><p>超值折扣</p></a></li>
+                    <li><a class="a5"  href=""><span class="s5"></span><p>9点限时闪购</p></a></li>
+                    <li class="footer_advantage_right"><a class="a6" href=""><span class="s6"></span><p>400－664－6698</p></a></li>
+                </ul>
+            </div>
+            <p class="footer_link">
+                <a  href="">关于魅力惠</a>
+                <a href="">加入我们</a>
+                <a href="">联系我们</a>
+
+                <a href="">使用帮助</a>
+                <a href="">使用规则</a>
+                <a href="">隐私声明</a>
+                <a href="">网站地图</a>
+            </p>
+            <p class="footer_copyright">
+                <span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有</span>浙ICP备16004860号-1
+            </p>
+            <p class="footer_license">
+                <span><a href="" target="_blank" rel="nofollow"><img   width="35" height="36" src={% static "images/foot1.jpg.png" %} ></a></span>
+                <a href="" target="_blank" rel="nofollow"><img   width="105" height="35"   src={% static "images/foot2.jpg.png" %}></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
